@@ -11,11 +11,14 @@ package javaapplication1;
  */
 public class JavaApplication1 {
 
-    /**
-     * @param args the command line arguments
-     */
+    public static boolean isTrue(String str){
+            return str.matches("[tT]rue");
+    }
+    
+    
     public static void main(String[] args) {
-        System.out.println("hi");
+        
+        System.out.println(isTrue("true"));
     }
     
 }
